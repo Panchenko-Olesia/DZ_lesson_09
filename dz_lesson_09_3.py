@@ -9,6 +9,8 @@ class Parallelogram:
         return f"Площа параллелограма дорівнює {sqr}"
 
 class Square (Parallelogram):
+    def __init__(self, width):
+        self.width = width
     def get_area(self):
         sqr = self.width * self.width
         return f"Площа квадрата дорівнює {sqr}"
@@ -16,5 +18,5 @@ class Square (Parallelogram):
 my_paral = Parallelogram(8, 17)
 print(my_paral.get_area())
 
-my_square = Square(5,5)
+my_square = Square(8)
 print(my_square.get_area())
